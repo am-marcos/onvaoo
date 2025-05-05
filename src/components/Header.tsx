@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./ui/Button";
+import { Link } from "react-router-dom";
 import { MapPin } from "lucide-react";
 
 const Header: React.FC = () => {
@@ -15,12 +16,12 @@ const Header: React.FC = () => {
           </a>
 
           <nav className="hidden md:flex ml-10 space-x-6">
-            <a
-              href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium"
-            >
-              Explorer
-            </a>
+          <Link
+          to="/explorer"
+          className="text-gray-700 hover:text-blue-600 font-medium"
+        >
+          Explorer
+        </Link>
             <a
               href="#"
               className="text-gray-700 hover:text-blue-600 font-medium"
